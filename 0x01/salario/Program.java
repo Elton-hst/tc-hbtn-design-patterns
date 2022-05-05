@@ -1,6 +1,4 @@
 
-import salario.SalarioService;
-
 public class Program {
     public static void main(String[] args) {
         SalarioService salarioService1 = new SalarioService();
