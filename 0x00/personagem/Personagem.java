@@ -1,4 +1,3 @@
-package personagem;
 
 import java.util.Locale;
 

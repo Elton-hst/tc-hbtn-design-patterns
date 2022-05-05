@@ -1,4 +1,3 @@
-package personagem;
 
 public class Guerreiro extends Personagem{
 
