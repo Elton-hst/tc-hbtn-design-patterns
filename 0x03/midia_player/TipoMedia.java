@@ -1,4 +1,5 @@
 public enum TipoMedia {
-
-    MP3,VLC,MP4;
+    MP3,
+    VLC,
+    MP4;
 }

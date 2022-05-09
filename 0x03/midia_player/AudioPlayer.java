@@ -1,13 +1,12 @@
 public class AudioPlayer implements MediaPlayer {
 
     @Override
-    public void reproduzir(TipoMedia tipoMedia, String nomeArquivo) {
-        if (tipoMedia == TipoMedia.MP3) {
-            System.out.print("Reproduzindo MP3: " + nomeArquivo);
+    public void reproduzir(TipoMedia tipoMedia,String nomeDoArquivo) {
+        if(tipoMedia == TipoMedia.MP3) {
+            System.out.printf("Reproduzindo MP3: " + nomeDoArquivo);
         } else {
-            MediaPlayerAdapter mediaPlayerAdapter = new MediaPlayerAdapter();
-            mediaPlayerAdapter.reproduzir(tipoMedia, nomeArquivo);
+            MediaAdapter mediaAdapter = new MediaAdapter();
+            mediaAdapter.reproduzir(tipoMedia, nomeDoArquivo);
         }
-
     }
 }

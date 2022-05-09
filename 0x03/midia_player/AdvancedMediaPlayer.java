@@ -1,5 +1,5 @@
 public interface AdvancedMediaPlayer {
-    void reproduzirVlc(String VLC);
+    void reproduzirVlc(String nomeDoArquivo);
 
-    void reproduzirMp4(String MP4);
+    void reproduzirMP4(String nomeDoArquivo);
 }
