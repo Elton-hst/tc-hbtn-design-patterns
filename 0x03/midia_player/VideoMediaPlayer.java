@@ -1,11 +1,13 @@
-public class VideoMediaPlayer implements AdvancedMediaPlayer {
+public class VideoMediaPlayer implements AdvancedMediaPlayer{
     @Override
-    public void reproduzirVlc(String nomeDoArquivo) {
-        System.out.printf("Reproduzindo VLC: " + nomeDoArquivo);
+    public void reproduzirVlc(String nome) {
+        System.out.print("Reproduzindo VLC: " + nome);
     }
 
     @Override
-    public void reproduzirMP4(String nomeDoArquivo) {
-        System.out.printf("Reproduzindo MP4: " + nomeDoArquivo);
+    public void reproduzirMp4(String nome) {
+        System.out.print("Reproduzindo MP4: " + nome);
     }
+
+
 }

@@ -1,3 +1,4 @@
 public interface MediaPlayer {
-    public void reproduzir(TipoMedia tipoMedia, String nomeDoArquivo);
+
+    public void reproduzir(String nome, TipoMedia tipo);
 }

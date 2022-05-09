@@ -1,15 +1,22 @@
-public class MediaPlayerAdapter implements MediaPlayer {
+public class MediaPlayerAdapter implements MediaPlayer{
 
-    private AdvancedMediaPlayer advancedMediaPlayer;
+    private AdvancedMediaPlayer advanced;
+    private TipoMedia tipo;
 
     public MediaPlayerAdapter(TipoMedia tipoMedia) {
-        if(tipoMedia != TipoMedia.MP3) {
-            this.advancedMediaPlayer = new VideoMediaPlayer();
+
+        if (tipoMedia != TipoMedia.MP3){
+            this.advanced = new VideoMediaPlayer();
         }
     }
 
     @Override
-    public void reproduzir(TipoMedia tipoMedia, String nomeDoArquivo) {
-        System.out.println("Reproduzindo " + tipoMedia.name() + ": "  + nomeDoArquivo);
+    public void reproduzir(String nome, TipoMedia tipo) {
+        if (tipo == TipoMedia.MP4){
+            advanced.reproduzirMp4(nome);
+        }
+        else if (tipo == TipoMedia.VLC){
+            advanced.reproduzirVlc(nome);
+        }
     }
 }
